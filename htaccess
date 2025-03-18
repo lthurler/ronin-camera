@@ -1,0 +1,43 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Cache de imagens (15 dias)
+  ExpiresByType image/jpeg "access plus 15 days"
+  ExpiresByType image/png "access plus 15 days"
+  ExpiresByType image/gif "access plus 15 days"
+  ExpiresByType image/webp "access plus 15 days"
+  ExpiresByType image/svg+xml "access plus 15 days"
+  
+  # Cache de CSS e JavaScript (15 dias)
+  ExpiresByType text/css "access plus 15 days"
+  ExpiresByType application/javascript "access plus 15 days"
+  
+  # Cache de fontes (15 dias)
+  ExpiresByType font/woff2 "access plus 15 days"
+  
+  # Não armazenar HTML no cache
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Adicionar Cache-Control para maior controle
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|css|js|woff2)$">
+    Header set Cache-Control "max-age=1296000, public"  # 15 dias em segundos
+  </FilesMatch>
+  
+  # Cache-Control para HTML (não cachear)
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+  </FilesMatch>
+  
+  # Garantir que o cache seja validado após expiração
+  Header unset ETag
+  FileETag None
+</IfModule>
+
+<IfModule mod_deflate.c>
+  # Ativar compressão Gzip para reduzir o tamanho dos arquivos
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml
+  AddOutputFilterByType DEFLATE text/css application/javascript
+  AddOutputFilterByType DEFLATE image/svg+xml application/font-woff2
+</IfModule>

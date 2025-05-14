@@ -1,29 +1,3 @@
-// Card click
-
-const cards = document.querySelectorAll('.card');
-const services = document.querySelectorAll('.service');
-const serviceTextContainer = document.getElementById('service-text-container');
-
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const targetId = card.getAttribute('data-target');
-
-        // Esconde todos os textos
-        services.forEach(service => {
-            service.classList.remove('active');
-        });
-
-        // Exibe o texto correspondente
-        const targetService = document.getElementById(targetId);
-        targetService.classList.add('active');
-
-        // Exibe e aplica transição na div service-text-container
-        serviceTextContainer.classList.add('active');       
-    });
-});
-
-
-
   /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),

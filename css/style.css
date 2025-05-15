@@ -266,7 +266,7 @@ header {
 }
 
 #main-text h1 {
-    color: #822c8f;
+    color: #b152c0;
     /* padding-bottom: 1rem;     */
 }
 
@@ -303,6 +303,7 @@ header {
 
 #email span {
     font-size: 1rem;
+    color: #ffff;
 }
 
 #cftv, #servicos, #sobre, #contato  {
@@ -356,6 +357,10 @@ header {
     font-size: .8rem;
 }
 
+#cftv {
+    background: linear-gradient(180deg, rgba(104, 48, 133, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
 #cftv-txt-container {
     display: flex;
     flex-direction: column;
@@ -368,18 +373,58 @@ header {
     padding-top: 3rem;
 } 
 
-#cftv-img {
-    width: 500px;
-    height: 300px;
+#cftv-img-container {
+    background-color: #ffff;
+    overflow: hidden;
     border-radius: 20px;
-    background: center / cover no-repeat url("../img/destaque-internas-cftv.jpg");
+}
+
+#cftv-img {
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    background: center / cover no-repeat url("../img/18ade71e7c54a4f6f47423e1b5121796.png");
 }
 
 #cftv-txt {
-    padding: 0 3rem;
+    padding: 0 10rem;
     display: flex;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.1rem;
     flex-direction: column;
     gap: 1rem;
+}
+
+#cftv-txt p span {
+    font-size: 1.2rem;    
+    color: #92429F;    
+}
+
+#cftv-txt span {
+    font-size: 1.3rem;
+    color: #92429F;
+    font-weight: 500;
+}
+
+#cftv-txt span:nth-last-of-type(1) {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#contato-container a div span {
+    color: #ffff;
+}
+
+#cftv-txt ul {
+    list-style: inside;
+}
+
+#contato-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 #mesh-img {
@@ -449,6 +494,102 @@ header {
 
 #sobre h2 {
     padding: 1rem 0 2rem;
+}
+
+#sobre-ronin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 3rem;
+}
+
+#sobre h2 {
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#ronin-txt {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* padding: 0 2rem 4rem 2rem; */
+}
+
+#ronin-txt h2 {
+    color: #ffff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: SUSE;
+    /* font-family: 'poppins', sans-serif; */
+}
+
+#ronin-txt P {
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+}
+
+#ronin-txt ul {
+    list-style: inside;
+}
+
+#ronin-txt span {
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.leo-card {
+    text-align: center;
+    color: #ffff;
+    background-color: #000;
+    cursor: pointer;
+    gap: .5rem;
+    /* width: 180px;
+    height: 290px; */
+    border-radius: 10px;
+    display: flex;
+    padding: .3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #b152c0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 10px 10px 0 0;
+}
+
+.leo-card p {
+    font-family: SUSE;
+    font-weight: 600;
+    font-size: 1rem;    
+}
+
+.leo-card a:hover {
+    transform: translateY(-5px);
+}
+
+.leo-card i {
+    font-size: 1.5rem;
+    transition: transform .8s;
 }
 
 .card {
@@ -719,6 +860,10 @@ header {
     transform: translate(.25rem);    
 }
 
+#tel-up {
+    display: none;
+}
+
 .scrollup img {
     width: 100%;
     height: auto;
@@ -766,35 +911,41 @@ footer {
     flex-direction: column;
     background-color: #000;
     color: #ffff;
-    font-family: "Poppins", sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: .9rem;
-    padding-top: 2rem;
+    padding-top: 2rem
 }
 
 #footer-container {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 #footer-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     padding-top: 1rem;
     padding-left: 1rem;
-    padding-bottom: 3rem;    
+    padding-bottom: 3rem
 }
 
 #footer-logo img {
-    width: 200px;
+    width: 200px
+}
+
+#footer-telefone {
+    transition: all;
 }
 
 #social-link {
-    display: flex;    
-    gap: 1rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
 }
 
 #social-link a {
@@ -809,18 +960,19 @@ footer {
 }
 
 #social-link a i {
-    color: #92429F;
+    color: #92429f;
+    font-size: 1.5rem;
     border: none;
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
 }
 
 #social-link a i:hover {
     color: #ffff;
-    transform: translateY(-5px);
+    transform: translateY(-5px)
 }
 
 #footer-nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.2rem
 }
 
 #footer-nav ul {
@@ -829,32 +981,46 @@ footer {
     gap: 2.7rem;
 }
 
-#copyright {
+#email-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: .5rem;
+    color: #ffff;
+    font-size: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+#email-container:hover {
+    color: #b152c0;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 #footer-logo {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center
 }
 
 #footer-map {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     overflow: hidden;
-    padding-right: 2.5rem;
-    padding-bottom: 2rem; 
+    /* padding-right: 2.5rem; */
+    padding-bottom: 2rem
 }
 
 #footer-map iframe {
     width: 100%;
     height: auto;
     border: none;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 /* Media query */
@@ -970,6 +1136,10 @@ footer {
         font-size: 1.6rem;
     }
 
+    #tel-up {
+        display: inline;
+    }
+
     .wifi-servico {
         display: flex;
         flex-direction: column;        
@@ -1042,6 +1212,44 @@ footer {
 
     #sobre h2 {
         padding-top: 1rem;
+    }
+
+    #sobre-ronin {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .leo-card a i {
+        font-size: 2rem;
+    }
+
+    #ronin-txt {
+        width: 100%;
+        padding: 0 1rem;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #ronin-txt ul {
+        list-style-position: outside;
+        gap: 1rem;
+        padding-left: 1rem;    
+    }
+
+    #ronin-txt ul li {
+        padding-bottom: .5rem;
+    }
+
+    #ronin-txt p {
+        font-size: 1rem;
+    }
+
+    #ronin-txt span {
+        font-size: 1rem;
+    }
+
+    #ronin-txt h2 {
+        font-size: 1.3rem;        
     }
     
     #sobre-container {
@@ -1196,20 +1404,38 @@ footer {
     }    
 }
 
-@media only screen and (min-width:750px) and (max-width:1050px) {
+@media only screen and (min-width: 705px) and (max-width: 1050px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #header-menu {
+        display: none
+    }
+
+    .nav__toggle {
+        display: inline;
+        color: #92429f;
+        font-size: 2.5rem
+    }
+
+    #header-telefone {
+        display: none
+    }
 
     #main-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 3rem
     }
 
-    #main-info {        
+    #main-info {
         justify-content: center;
         flex-direction: column;
         gap: 1rem;
-        align-items: center;
+        align-items: center
     }
 
     #main-text {
@@ -1217,32 +1443,99 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 2rem
     }
 
     #main-text h1 {
-        text-align: center;
+        text-align: center
     }
 
     #main-text p {
-        text-align: center;
+        text-align: center
     }
 
     #header-nav ul {
-        gap: 2rem;
+        gap: 2rem
     }
 
-    #card-service-container{
+    #tel-up {
+        display: inline;
+    }
+
+    #cabo-txt {
+        padding: 2rem 1rem;    
+    }
+
+    #cabo-txt span {
+        flex-direction: column;
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+
+    #cabo-txt span h2 {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+
+    #cabo-txt h3 {
+        font-size: 1rem;
+        color: #92429f;
+    }
+
+    #externo-img {
+        background-size: cover;
+    }
+
+    #card-service-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding-bottom: 6rem;
+        padding-bottom: 6rem
     }
 
     #outros-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem
+    }
+
+    #sobre-ronin {
+        flex-direction: column;
         gap: 2rem;
+        width: 100%;
+    }
+
+    .leo-card a i {
+        font-size: 2rem;
+    }
+
+    #ronin-txt {
+        width: 700px;
+        padding: 0 2rem;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #ronin-txt ul {
+        list-style-position: outside;
+        gap: 1rem;
+        padding-left: 1rem;
+    }
+
+    #ronin-txt ul li {
+        padding-bottom: .5rem;
+    }
+
+    #ronin-txt p {
+        font-size: 1rem;
+    }
+
+    #ronin-txt span {
+        font-size: 1rem;
+    }
+
+    #ronin-txt h2 {
+        font-size: 1.4rem;
     }
 
     #card-sobre-container {
@@ -1251,19 +1544,19 @@ footer {
         gap: 1rem;
         padding: 0;
         justify-items: center;
-        align-items: center;
+        align-items: center
     }
 
-    #card-sobre-container .card{
-        height: 161px;
+    #card-sobre-container .card {
+        height: 161px
     }
 
     #social {
-        width: 600px;
+        width: 600px
     }
 
     .scrollup {
-        width: 5%;
+        width: 4%;
+        /* right: 3rem; */
     }
-
 }

@@ -34,5 +34,5 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://roninsistemas.com.br/sitemap.xml
-Sitemap: https://www.roninsistemas.com.br/sitemap.xml
+Sitemap: https://camera.roninsistemas.com.br/sitemap.xml
+Sitemap: https://www.camera.roninsistemas.com.br/sitemap.xml

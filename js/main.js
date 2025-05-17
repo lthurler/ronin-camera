@@ -57,7 +57,7 @@ contactForm.addEventListener("submit", sendEmail);
 const sr = ScrollReveal({ origin: "top", distance: window.innerWidth <= 768 ? '30px' : '40px', duration: 2500, delay: 400 });
 
 sr.reveal(".contact__content"),
-     sr.reveal("#card-sobre-container,#social-container, #copyright, #cabo-card, #mesh, #externo, #ap", { delay: 600, origin: "bottom", interval: 100 }),
-     sr.reveal("#main-text, #footer-logo img, #footer-content, #ronin-img", { origin: "left" }),
-     sr.reveal("#main-img, #footer-menu, #footer-map, #ronin-txt", { origin: "right" }),
+     sr.reveal("#card-sobre-container,#social-container, #copyright, #cabo-card, #mesh, #externo, #cftv-txt", { delay: 600, origin: "bottom", interval: 100 }),
+     sr.reveal("#main-text, #footer-logo img, #footer-content, #ronin-img, #cftv-img-container", { origin: "left" }),
+     sr.reveal("#contato-container, #footer-menu, #footer-map, #ronin-txt", { origin: "right" }),
      sr.reveal(".qualification__content, .services__card", { interval: 100 });

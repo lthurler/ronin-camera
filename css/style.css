@@ -44,13 +44,13 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  font-family: "SUSE";
+  font-family: "SUSE", sans-serif;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: "SUSE";
+  font-family: "SUSE", sans-serif;
 }
 
 a {
@@ -1027,6 +1027,39 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* #hero {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      center / cover no-repeat url("../img/bigstock-Cctv-Surveillance-Security-Cam-302948716-1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+  } */
+
+  #hero {
+    background-size: cover;
+  }
+
+  #header {
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+  }
+
+  #home {
+    height: 90vh;
+  }
+
   #header-menu {
     display: none;
   }
@@ -1034,7 +1067,7 @@ footer {
   .nav__toggle {
     display: inline;
     color: #92429f;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #header-telefone {
@@ -1045,9 +1078,14 @@ footer {
       display: flex; 
   }
 
-  #main-img {
-    display: none;
+  #logo {
+    width: 200px;
   }
+
+  /* #hero {
+    min-width: 100vw;
+    min-height: 100vh;    
+  }  */
 
   #main-container {
     display: flex;
@@ -1062,25 +1100,44 @@ footer {
     align-items: center;
     gap: 1rem;
     text-align: center;
-  }
-
-  #main-p {
-    font-size: 1rem;
-    gap: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-  }
+    padding: 1rem .5rem;
+  }  
 
   #main-text p span {
     font-size: 1rem;
   }
 
   #main-text h1 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
+  #main-text h2 {
+    font-size: 1.2rem;
+  }
+
+  #main-apresentacao p {
+    font-size: 1rem;
+  }
+
+  #main-resto p {
+    font-size: 1rem;
+  }
+
+  #zap button div p {
+    font-size: .9rem;
+  }
+
+  #email{
+    padding: .3rem .9rem;
+  }
+
+  #email span {
+    font-size: .9rem;
+  }
+
+
   #tel-up {
-    display: inline;
+    display: flex;
   }
 
   .wifi-servico {
@@ -1093,6 +1150,35 @@ footer {
   .servico-txt p {
     font-size: 1rem;
   }
+
+  #cftv-txt-container {
+   padding: 0;   
+  }
+
+  #cftv-img {
+    width: 300px;
+    height: 200px;     
+  }
+
+  #cftv-txt {
+    padding: 0 2rem;    
+  }
+
+  #cftv-txt p{
+    font-size: .9rem;
+  }
+
+  #cftv-txt span {
+    font-size: .9rem;
+  }
+
+  #cftv-txt p span {
+    font-size: .9rem;
+  }
+
+  /* #cftv-txt ul {
+    text-align: start;
+  } */
 
   #mesh-img {
     background-size: contain;
@@ -1157,6 +1243,10 @@ footer {
     padding-top: 1rem;
   }
 
+  #sobre-container {
+    padding-top: 2rem;
+  }
+
   #sobre-ronin {
     flex-direction: column;
     gap: 2rem;
@@ -1180,7 +1270,7 @@ footer {
   }
 
   #ronin-txt ul li {
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
   }
 
   #ronin-txt p {
@@ -1193,10 +1283,6 @@ footer {
 
   #ronin-txt h2 {
     font-size: 1.3rem;
-  }
-
-  #sobre-container {
-    padding-top: 1rem;
   }
 
   #card-sobre-container {
@@ -1216,14 +1302,19 @@ footer {
     position: relative;
   }
 
+  #sobre h2 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
   #card-sobre-container .card p {
     display: inline;
     text-decoration: none;
-    font-size: 0.76rem;
+    font-size: .76rem;
   }
 
   #card-sobre-container .card {
-    padding: 0.7rem;
+    padding: .7rem;
     height: 100%;
   }
 
@@ -1281,7 +1372,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 3rem;
+    gap: 1rem;
     padding: 0.5rem 0 3rem 0;
   }
 
@@ -1290,8 +1381,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    padding: 0 0 2rem 0;
+    gap: 1rem;
+    /* padding: 0 0 2rem 0; */
+    padding: 0;
   }
 
   #footer-logo img {
@@ -1338,8 +1430,32 @@ footer {
     padding-right: 0;
   }
 
+  /* .scrollup {
+    position: fixed;
+    right: 1.7rem;
+    width: 3%;
+    height: auto;
+    bottom: -50%;
+    box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+    display: flex;
+    border-radius: 0.25rem;
+    z-index: 10;
+    transition: bottom 0.3s, transform 0.3s, background 0.4s;
+  }
+  
+  #tel-up {
+    right: 0;
+    left: 1.7rem;
+    box-shadow: 0 4px 12px hsla(19, 64%, 24%, 0.1);
+  } */
+
+  #tel-up {
+    left: 1rem;
+  }
+
   .scrollup {
-    width: 8%;
+    width: 7%;
+    right: 1rem;
   }
 
   .review-item {

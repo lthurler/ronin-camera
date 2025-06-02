@@ -1045,12 +1045,13 @@ footer {
     max-height: 100vh;
   } */
 
-  #hero {
-    background-size: cover;
-  }
+  /* #hero {
+    background-position-x: center;
+    background-position-y: center;
+  } */
 
   #header {
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
     height: 10vh;
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
@@ -1067,7 +1068,7 @@ footer {
   .nav__toggle {
     display: inline;
     color: #92429f;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   #header-telefone {
@@ -1152,7 +1153,7 @@ footer {
   }
 
   #cftv-txt-container {
-   padding: 0;   
+   padding: 2rem 0;
   }
 
   #cftv-img {
@@ -1165,20 +1166,20 @@ footer {
   }
 
   #cftv-txt p{
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   #cftv-txt span {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   #cftv-txt p span {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
-  /* #cftv-txt ul {
-    text-align: start;
-  } */
+  #cftv-txt ul {
+    font-size: 1rem;
+  }
 
   #mesh-img {
     background-size: contain;
@@ -1454,7 +1455,7 @@ footer {
   }
 
   .scrollup {
-    width: 7%;
+    width: 8%;
     right: 1rem;
   }
 
@@ -1506,6 +1507,7 @@ footer {
 
   #main-text h1 {
     text-align: center;
+    
   }
 
   #main-text p {
@@ -1520,7 +1522,7 @@ footer {
     display: inline;
   }
 
-  #cabo-txt {
+  /* #cabo-txt {
     padding: 2rem 1rem;
   }
 
@@ -1538,6 +1540,14 @@ footer {
   #cabo-txt h3 {
     font-size: 1rem;
     color: #92429f;
+  } */
+
+  #cftv-txt-container{
+    padding: 2rem;
+  }
+
+  #cftv-txt {
+    padding: 0 2rem;
   }
 
   #externo-img {
